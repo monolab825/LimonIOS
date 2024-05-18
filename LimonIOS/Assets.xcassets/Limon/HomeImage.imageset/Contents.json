@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "ee1a938349f34e569ff2c5b022ca5a57.jpg",
+      "filename" : "Limon entero linea_semi 1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "Limon entero linea_semi 1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "Limon entero linea_semi 1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

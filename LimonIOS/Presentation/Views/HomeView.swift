@@ -9,20 +9,17 @@ import SwiftUI
 
 struct HomeView: View {
     
-    var logged: Bool = true
+    
+    // @ObservedObject var homeViewModel = HomeViewModel(useCase: UseCaseHome())
     
     var body: some View{
-        VStack{
-            if(logged){
-                
-            }else{
-                LoginView()
-            }
-        }
-
+        
+        Text("Todo")
     }
     
 }
+    
+
 
 #Preview {
     LoginView()

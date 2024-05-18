@@ -6,3 +6,8 @@
 //
 
 import Foundation
+import Combine
+protocol UseCaseLoginProtocol {
+    func logIn(user: String?, password: String?) -> AnyPublisher<LoginResponse, Error>
+    //func signUp(user: String?, password: String?) -> AnyPublisher<LoginResponse, Error>
+}

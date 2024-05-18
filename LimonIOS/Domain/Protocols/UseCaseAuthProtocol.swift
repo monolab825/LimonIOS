@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-protocol UseCaseHomeProtocol {
+protocol UseCaseAuthProtocol {
     func login(user: String?, password: String?) -> AnyPublisher<LoginResponse, Error>
 }
 

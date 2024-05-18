@@ -12,8 +12,17 @@ final class LoginViewModel: ObservableObject {
     let useCase: UseCaseLoginProtocol
     
     
-    init(useCase: UseCaseHomeProtocol) {
+    init(useCase: UseCaseLoginProtocol) {
         self.useCase = useCase
+    }
+    
+    
+    func logIn(userName: String, password: String){
+        
+    }
+    
+    func logOut(){
+        
     }
     
     
