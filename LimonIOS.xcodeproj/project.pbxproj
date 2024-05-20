@@ -14,6 +14,8 @@
 		8D34473D2BEBE4E800CB8D7A /* LimonIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D34473C2BEBE4E800CB8D7A /* LimonIOSTests.swift */; };
 		8D3447472BEBE4E800CB8D7A /* LimonIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3447462BEBE4E800CB8D7A /* LimonIOSUITests.swift */; };
 		8D3447492BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */; };
+		8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CE62BFB5F4800495200 /* Keychain.swift */; };
+		8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D391CE92BFB5F8000495200 /* KeychainSwift */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
@@ -56,6 +58,7 @@
 		8D3447422BEBE4E800CB8D7A /* LimonIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LimonIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3447462BEBE4E800CB8D7A /* LimonIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITests.swift; sourceTree = "<group>"; };
 		8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8D391CE62BFB5F4800495200 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +165,7 @@
 				8DD7FDFF2BF3A21C00E8C901 /* Repository */,
 				8DD7FDF82BF39E5500E8C901 /* MockedData */,
 				8DD7FDF52BF384F400E8C901 /* Network */,
+				8D391CE62BFB5F4800495200 /* Keychain.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -275,6 +280,9 @@
 			dependencies = (
 			);
 			name = LimonIOS;
+			packageProductDependencies = (
+				8D391CE92BFB5F8000495200 /* KeychainSwift */,
+			);
 			productName = LimonIOS;
 			productReference = 8D3447282BEBE4E600CB8D7A /* LimonIOS.app */;
 			productType = "com.apple.product-type.application";
@@ -347,6 +355,9 @@
 				Base,
 			);
 			mainGroup = 8D34471F2BEBE4E600CB8D7A;
+			packageReferences = (
+				8D391CE82BFB5F6500495200 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 8D3447292BEBE4E600CB8D7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +414,7 @@
 				8DD7FE012BF3A23200E8C901 /* AuthRepository.swift in Sources */,
 				8DD7FDF42BF383CB00E8C901 /* LoginResponse.swift in Sources */,
 				8DD7FDFC2BF3A11500E8C901 /* LoginUseCase.swift in Sources */,
+				8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -732,6 +744,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8D391CE82BFB5F6500495200 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8D391CE92BFB5F8000495200 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8D391CE82BFB5F6500495200 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D3447202BEBE4E600CB8D7A /* Project object */;
 }
