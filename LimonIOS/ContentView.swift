@@ -8,21 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var logged: Bool = true
-    
+    @EnvironmentObject var tokenManager: TokenManager
+
     var body: some View{
         VStack{
-            if(logged){
+            if(!tokenManager.token.isEmpty || tokenManager.token != ""){
                 HomeView()
             }else{
-                LoginView()
+                LoginView(tokenManager: tokenManager)
             }
         }
-
     }
-
-    
-    }
+}
 
 
 #Preview {

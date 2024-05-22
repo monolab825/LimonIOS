@@ -9,13 +9,20 @@ import SwiftUI
 
 struct LoginView: View {
     
-    //TODO: Move to viewModel
-    @State private var username: String = ""
-    @State private var password: String = ""
+    @EnvironmentObject var tokenManager: TokenManager
+    @ObservedObject var loginViewModel: LoginViewModel
 
-   // @ObservedObject var loginViewModel = LoginViewModel(useCase: UseCaseLogin())
+    
+    init(tokenManager: TokenManager) {
+           self.loginViewModel = LoginViewModel(useCase: LoginUseCase(), tokenManager: tokenManager)
+       }
     
     var body: some View{
+        Rectangle()
+            .fill(Color.SecondaryCustom)
+            .frame(height: 100)
+            .edgesIgnoringSafeArea(.top)
+        
         VStack{
             Spacer()
             Image("HomeImage")
@@ -24,33 +31,29 @@ struct LoginView: View {
                 .padding()
             Spacer()
             
-            TextField("Usuario", text: $username)
-                .padding(.vertical, 10)
-                .padding(.horizontal)
-                .background(Color.white)
-                .overlay(
-                    VStack {
-                        Spacer()
-                        Rectangle()
-                            .frame(height: 1)
-                            .foregroundColor(.gray)
-                    }
-                )
-                .foregroundColor(.gray)
-            TextField("Password", text: $password)
+            CustomTextField(text: $loginViewModel.userName, placeholder: "Usuario", isSecure: false)
                 .padding()
-            Button("He olvidado mi contraseña o usuario"){
-                print("Pulsado")
+            CustomTextField(text: $loginViewModel.password, placeholder: "Contraseña", isSecure: true)
+                .padding()
+
+            HStack{
+                Spacer()
+                Button("He olvidado mi contraseña o usuario"){
+                    print("Pulsado")
+                }
+                .font(.system(size: 12))
             }
+           
+            
             Spacer()
             
             
             Button("Entrar") {
-                print("Pulsado")
+                loginViewModel.logIn()
 
             }.frame(maxWidth: .infinity)
                 .padding()
-                .background(Color.Primary)
+                .background(Color.PrimaryCustom)
                 .cornerRadius(10)
                 .foregroundColor(.white)
             
@@ -64,5 +67,7 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    LoginView(tokenManager: TokenManager())
 }
+
+

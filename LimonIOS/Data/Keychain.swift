@@ -17,7 +17,6 @@ protocol KeychainProtocol {
 
 final class Keychain: KeychainProtocol {
     private let keychain = KeychainSwift()
-    private let shared = Keychain()
     
     
     func save(key: String, value: String) {
@@ -26,7 +25,7 @@ final class Keychain: KeychainProtocol {
     
     func getKey(key: String) -> String {
         guard let value = keychain.get(key) else {
-            return "Key not found"
+            return ""
         }
         
         return value

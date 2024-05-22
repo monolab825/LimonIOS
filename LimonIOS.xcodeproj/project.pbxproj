@@ -16,6 +16,7 @@
 		8D3447492BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */; };
 		8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CE62BFB5F4800495200 /* Keychain.swift */; };
 		8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D391CE92BFB5F8000495200 /* KeychainSwift */; };
+		8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CEB2BFB6F0500495200 /* TokenManager.swift */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
@@ -59,6 +60,7 @@
 		8D3447462BEBE4E800CB8D7A /* LimonIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITests.swift; sourceTree = "<group>"; };
 		8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D391CE62BFB5F4800495200 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		8D391CEB2BFB6F0500495200 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 			children = (
 				8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */,
 				8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */,
+				8D391CEB2BFB6F0500495200 /* TokenManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				8DD7FDF02BF382D700E8C901 /* LoginViewModel.swift in Sources */,
 				8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */,
 				8D34472C2BEBE4E600CB8D7A /* LimonIOSApp.swift in Sources */,
+				8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */,
 				8DD7FDFE2BF3A14D00E8C901 /* UseCaseLoginProtocol.swift in Sources */,
 				8DD7FDF22BF3836C00E8C901 /* UseCaseAuthProtocol.swift in Sources */,
 				8DD7FE012BF3A23200E8C901 /* AuthRepository.swift in Sources */,

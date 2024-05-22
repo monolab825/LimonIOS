@@ -9,18 +9,23 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @EnvironmentObject var tokenManager: TokenManager
+
     
     // @ObservedObject var homeViewModel = HomeViewModel(useCase: UseCaseHome())
     
     var body: some View{
-        
+        NavigationStack{
+            
+        }
         Text("Todo")
+        Button("Borrar token"){
+            tokenManager.deleteToken()
+        }
     }
     
 }
     
 
 
-#Preview {
-    LoginView()
-}
+
