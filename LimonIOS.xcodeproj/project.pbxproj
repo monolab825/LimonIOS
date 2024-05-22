@@ -17,6 +17,7 @@
 		8D391CE72BFB5F4800495200 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CE62BFB5F4800495200 /* Keychain.swift */; };
 		8D391CEA2BFB5F8000495200 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8D391CE92BFB5F8000495200 /* KeychainSwift */; };
 		8D391CEC2BFB6F0500495200 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D391CEB2BFB6F0500495200 /* TokenManager.swift */; };
+		8DA297612BFE08F4001BF80A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8DA297602BFE08F4001BF80A /* .gitignore */; };
 		8DB0D6C92BF8E1D4007A0589 /* ExtensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */; };
 		8DB0D6CC2BF8E531007A0589 /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */; };
 		8DD279B22BF3616500FC708F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD279B12BF3616500FC708F /* LoginView.swift */; };
@@ -61,6 +62,7 @@
 		8D3447482BEBE4E800CB8D7A /* LimonIOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimonIOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8D391CE62BFB5F4800495200 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		8D391CEB2BFB6F0500495200 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		8DA297602BFE08F4001BF80A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8DB0D6C82BF8E1D4007A0589 /* ExtensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionColor.swift; sourceTree = "<group>"; };
 		8DB0D6CB2BF8E531007A0589 /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextfield.swift; path = "../Presentation/New Group/CustomTextfield.swift"; sourceTree = "<group>"; };
 		8DD279B12BF3616500FC708F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		8D34471F2BEBE4E600CB8D7A = {
 			isa = PBXGroup;
 			children = (
+				8DA297602BFE08F4001BF80A /* .gitignore */,
 				8D34472A2BEBE4E600CB8D7A /* LimonIOS */,
 				8D34473B2BEBE4E800CB8D7A /* LimonIOSTests */,
 				8D3447452BEBE4E800CB8D7A /* LimonIOSUITests */,
@@ -378,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3447332BEBE4E800CB8D7A /* Preview Assets.xcassets in Resources */,
+				8DA297612BFE08F4001BF80A /* .gitignore in Resources */,
 				8D3447302BEBE4E800CB8D7A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
